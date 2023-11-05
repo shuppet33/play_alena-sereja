@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.matrix table {
+    border-collapse: collapse;
+}
+
+.matrix td {
+    border: 1px dashed black;
+    width: 20px;
+    height: 20px;
+}
+
+.matrix .cell-p1 {
+    background: #dede42;
+    border: 1px solid black;
+}
+.matrix .cell-p2 {
+    background: cornflowerblue;
+    border: 1px solid black;
+}
+.matrix .cell-IP {
+    background: #ececec;
+    border: 1px solid black;
+}
+
+.matrix .cell-II {
+    position: relative;
+    background: #ec2d2d;
+    border: 1px solid black;
+}
+
+.matrix .cell-II:before {
+    position: absolute;
+    top: -6px;
+    left: 3px;
+    content: '×';
+    font-size: 30px;
+    color: black;
+}
