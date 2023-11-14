@@ -1,28 +1,13 @@
-const user1 = {
-    name: 'xyi',
-    credits: 100,
-    sayHello() {
-        console.log(`my name ${this.name}`)
+
+
+// Найти сумму чисел массива
+
+const sum = (myArr) => {
+    if (myArr.length === 1) {
+        return myArr[0]
+    } else {
+        return sum(myArr[0] + 1)
     }
 }
 
-function User (name) {
-    this.name = name;
-    this.credits = 100;
-    this.sayHello = function sayHello() {
-        console.log(`my name ${this.name}`)
-    }
-}
-
-const user2 = new User('Alena')
-
-const address = {
-    city: {
-        id: 0,
-        name: undefined,
-        postalCode: 12345,
-    }
-}
-
-console.log('ALENA', address?.city?.name)
-console.log('ALENA', address.city.postalCode)
+console.log('AAA', sum(1, 2)) // 3
